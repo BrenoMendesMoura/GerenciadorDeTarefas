@@ -1,9 +1,7 @@
 # Gerenciador De Tarefas
 
 <p align="center">
-  
-![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
-
+  ![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
 </p>
 
 ## Dados da Turma <br>
