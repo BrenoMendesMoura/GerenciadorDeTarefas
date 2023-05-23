@@ -1,6 +1,6 @@
 # Gerenciador De Tarefas
 
-```c++
+
 `{
 "data": [
 {}
@@ -11,4 +11,4 @@
 "items": {}
 }
 }`
-```
+
