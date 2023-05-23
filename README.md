@@ -6,6 +6,12 @@
   
 </div>
 
+<style>
+.centered {
+    text-align: center;
+}
+</style>
+
 ## Dados da Turma <br>
 Dia da semana: Sexta Feira <br>
 Período: Noturno <br>
