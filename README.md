@@ -46,4 +46,61 @@ int primeiro = 0, ultimo = 0, total = 0;
 ```
 
 
+### IsFull e IsEmpty
+Essas duas funções são usadas em todo o código, a ideia principal é realizar uma verificação em uma estrutura de condição para determinar se a fila ou pilha está cheia ou vazia.
 
+```c
+int isEmpty() {
+  return total == 0;
+}
+
+int isFull() {
+  return total == TAM;
+}
+```
+
+### Pilha
+
+Copiamos o *pilha* que o professor enviou na segunda-feira e adaptamos ao código, a função da pilha é ordenar como se fosse um empilhamento de acordo com a prioridade da tarefa inserida.
+por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse estilo:
+
+
+|id| Tarefa| Prioridade
+| ------------ | ------------ | ------------ |
+|4|Estudar para AV1|8|
+|1|Desenrolar a prova do dia 30-05|9|
+|5|Fazer o projeto da faculdade|10|
+
+
+Observe que o ID não está ordenado, mas a lista de prioridade está em ordem crescente.
+
+```c
+void push(Tarefa tarefa) {
+  if (isFull()) {
+    printf("A pilha de prioridades está cheia.\n");
+  } else {
+    int i;
+    for (i = total - 1; i >= 0; i--) {
+      if (tarefa.prioridade > tarefas[i].prioridade) {
+        tarefas[i + 1] = tarefas[i];
+      } else {
+        break;
+      }
+    }
+    tarefas[i + 1] = tarefa;
+    total++;
+  }
+}
+
+Tarefa pop() {
+  if (isEmpty()) {
+    printf("A pilha de prioridades está vazia.\n");
+    Tarefa emptyTask = {0, "", 0};
+    return emptyTask;
+  } else {
+    Tarefa tarefa = tarefas[total - 1];
+    total--;
+    return tarefa;
+  }
+}
+```
