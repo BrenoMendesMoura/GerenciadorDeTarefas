@@ -1,14 +1,6 @@
 # Gerenciador De Tarefas
 
-<style>
-.centered {
-    text-align: center;
-}
-</style>
-
-<div class="centered">
-    ![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
-</div>
+![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
 
 
 
