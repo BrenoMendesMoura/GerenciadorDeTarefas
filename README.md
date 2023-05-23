@@ -7,9 +7,11 @@
 </div>
 
 <style>
+  
 .centered {
     text-align: center;
 }
+  
 </style>
 
 ## Dados da Turma <br>
