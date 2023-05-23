@@ -1,7 +1,7 @@
 # Gerenciador De Tarefas
-
+<div class="centered">
 ![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
-
+</div>
 
 ## Dados da Turma <br>
 Dia da semana: Sexta Feira <br>
