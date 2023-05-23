@@ -1,5 +1,8 @@
 # Gerenciador De Tarefas
 
+![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
+
+
 ## Dados da Turma <br>
 Dia da semana: Sexta Feira <br>
 Período: Noturno <br>
