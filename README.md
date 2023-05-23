@@ -1,11 +1,9 @@
 # Gerenciador De Tarefas
 
 <style>
-  
 .centered {
     text-align: center;
 }
-  
 </style>
 
 <div class="centered">
