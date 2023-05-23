@@ -46,6 +46,7 @@ int primeiro = 0, ultimo = 0, total = 0;
 ```
 
 
+
 ### IsFull e IsEmpty
 Essas duas funções são usadas em todo o código, a ideia principal é realizar uma verificação em uma estrutura de condição para determinar se a fila ou pilha está cheia ou vazia.
 
@@ -59,9 +60,10 @@ int isFull() {
 }
 ```
 
+
 ### Pilha
 
-Copiamos o *pilha* que o professor enviou na segunda-feira e adaptamos ao código, a função da pilha é ordenar como se fosse um empilhamento de acordo com a prioridade da tarefa inserida.
+Copiamos o *pilha* que o professor enviou na segunda-feira e adaptamos ao código, A prioridade é levada em consideração apenas na inserção, para manter as tarefas ordenadas na pilha de acordo com sua prioridade.
 por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse estilo:
 
 
@@ -73,6 +75,7 @@ por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse
 
 
 Observe que o ID não está ordenado, mas a lista de prioridade está em ordem crescente.
+
 
 ```c
 void push(Tarefa tarefa) {
@@ -104,3 +107,5 @@ Tarefa pop() {
   }
 }
 ```
+
+
