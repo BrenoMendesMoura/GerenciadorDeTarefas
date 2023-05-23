@@ -23,7 +23,7 @@ Período: Noturno <br>
 ### Bibliotecas e typedef struct
 
 ```javascript
-`#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define TAM 10
@@ -32,5 +32,5 @@ typedef struct {
   int id;
   char descricao[100];
   int prioridade;
-} Tarefa;`
+} Tarefa;
 ```
