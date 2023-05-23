@@ -29,7 +29,7 @@ Utilizamos 2 bibliotecas para a realização do código, sendo elas:
 
 A utilidade do typedef struct é criar um novo tipo de dados com um nome mais fácil de usar e entender, simplificando a declaração de variáveis da estrutura.
 
-Sendo assim, declaramos 3 variáveis dentro dessa estrutura.
+A partir disso declaramos as variáveis globais que utilizamos ao decorrer do código.
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -40,4 +40,10 @@ typedef struct {
   char descricao[100];
   int prioridade;
 } Tarefa;
+
+Tarefa tarefas[TAM];
+int primeiro = 0, ultimo = 0, total = 0;
 ```
+
+
+
