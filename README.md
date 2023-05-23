@@ -1,14 +1,15 @@
 # Gerenciador De Tarefas
 
+## Bibliotecas e typedef struct
+```
+`#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define TAM 10
 
-`{
-"data": [
-{}
-],
-"pagination": {
-"last_visible_page": 0,
-"has_next_page": true,
-"items": {}
-}
-}`
-
+typedef struct {
+  int id;
+  char descricao[100];
+  int prioridade;
+} Tarefa;`
+```
