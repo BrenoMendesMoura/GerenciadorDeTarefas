@@ -46,6 +46,9 @@ int primeiro = 0, ultimo = 0, total = 0;
 ```
 
 
+<hr>
+
+ 
 
 ### IsFull e IsEmpty
 Essas duas funções são usadas em todo o código, a ideia principal é realizar uma verificação em uma estrutura de condição para determinar se a fila ou pilha está cheia ou vazia.
@@ -60,11 +63,11 @@ int isFull() {
 }
 ```
 
-<p align="center">
-  
+<hr>
+
+ 
 ### Pilha
 
-</p>
 
 Copiamos o *pilha* que o professor enviou na segunda-feira e adaptamos ao código, A prioridade é levada em consideração apenas na inserção, para manter as tarefas ordenadas na pilha de acordo com sua prioridade.
 por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse estilo:
@@ -112,6 +115,9 @@ Tarefa pop() {
 ```
 
 
+<hr>
+
+ 
 
 ### Fila
 
