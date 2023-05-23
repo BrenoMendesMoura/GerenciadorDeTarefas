@@ -21,13 +21,15 @@ Período: Noturno <br>
 
 <hr>
 
-## Explicação do código realizando em c++
+## Explicação do código realizado em c++
 
 ### Bibliotecas e typedef struct
+Utilizamos 2 bibliotecas para a realização do código, sendo elas:
+- `<stdio.h>`, para entrada e saída de mensagens no console.
+- `<string.h>`, para manipulação de dados do tipo string.
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #define TAM 10
 
