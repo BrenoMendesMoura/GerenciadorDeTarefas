@@ -1,7 +1,5 @@
 # Gerenciador De Tarefas
 
-![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
-
 ## Dados da Turma <br>
 Dia da semana: Sexta Feira <br>
 Período: Noturno <br>
@@ -16,6 +14,10 @@ Período: Noturno <br>
 |3021103269|Elias Yuri Yoshy Miyashiro|TADS|05A|
 |3022201058|Acsa Cristina Sena|TADS|05A|
 |3022200274|Matheus souza Martins|TADS|05A|
+
+<hr>
+
+![image](https://github.com/BrenoMendesMoura/GerenciadorDeTarefas/assets/80074264/5ae3b881-801b-4b37-a1b5-91b139fec0eb)
 
 
 <hr>
