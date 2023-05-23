@@ -27,6 +27,8 @@ Utilizamos 2 bibliotecas para a realização do código, sendo elas:
 - `<stdio.h>`, para entrada e saída de mensagens no console.
 - `<string.h>`, para manipulação de dados do tipo string.
 
+A utilidade do typedef struct é criar um novo tipo de dados com um nome mais fácil de usar e entender, simplificando a declaração de variáveis da estrutura.
+Sendo assim, declaramos 3 variáveis dentro dessa estrutura.
 ```c
 #include <stdio.h>
 #include <string.h>
