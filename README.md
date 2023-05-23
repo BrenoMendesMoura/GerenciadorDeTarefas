@@ -80,7 +80,7 @@ por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse
 |5|Fazer o projeto da faculdade|10|
 
 
-Observe que o ID não está ordenado, mas a lista de prioridade está em ordem crescente.
+Observe que o ID não está ordenado, mas a lista de prioridade está em empilhado de forma crescente.
 
 
 ```c
