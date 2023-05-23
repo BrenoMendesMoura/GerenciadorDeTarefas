@@ -51,8 +51,8 @@ int primeiro = 0, ultimo = 0, total = 0;
 
 
 <hr>
-
- 
+<br>
+<br>
 
 ### IsFull e IsEmpty
 Essas duas funções são usadas em todo o código, a ideia principal é realizar uma verificação em uma estrutura de condição para determinar se a fila ou pilha está cheia ou vazia.
@@ -68,8 +68,9 @@ int isFull() {
 ```
 
 <hr>
+<br>
+<br>
 
- 
 ### Pilha
 
 
@@ -120,8 +121,8 @@ Tarefa pop() {
 
 
 <hr>
-
- 
+<br>
+<br>
 
 ### Fila
 
