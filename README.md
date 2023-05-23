@@ -60,8 +60,11 @@ int isFull() {
 }
 ```
 
-
+<p align="center">
+  
 ### Pilha
+
+</p>
 
 Copiamos o *pilha* que o professor enviou na segunda-feira e adaptamos ao código, A prioridade é levada em consideração apenas na inserção, para manter as tarefas ordenadas na pilha de acordo com sua prioridade.
 por padrão, sem ordenar com o método bolha, o resultado deveria ser algo nesse estilo:
