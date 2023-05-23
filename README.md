@@ -109,3 +109,32 @@ Tarefa pop() {
 ```
 
 
+
+### Fila
+
+O projeto foi baseado no código do dia 12/05 sobre fila, ele foi a base para realizarmos o gerenciador de tarefas. Portanto, talvez haja uma similaridade com o código feito no replit.
+A diferença é a adaptação do valor inteiro para string
+
+```c
+void inserirTarefa(int id, char descricao[], int prioridade) {
+  if (isFull()) {
+    printf("A lista de tarefas está cheia.\n");
+  } else {
+    Tarefa novaTarefa;
+    novaTarefa.id = id;
+    strncpy(novaTarefa.descricao, descricao, sizeof(novaTarefa.descricao) - 1);
+    novaTarefa.descricao[sizeof(novaTarefa.descricao) - 1] = '\0';  
+    novaTarefa.prioridade = prioridade;
+    push(novaTarefa);
+  }
+}
+
+void retirarTarefa() {
+  if (isEmpty()) {
+    printf("A lista de tarefas está vazia.\n");
+  } else {
+    Tarefa tarefa = pop();
+    printf("Tarefa retirada: %d - %s\n", tarefa.id, tarefa.descricao);
+  }
+}
+```
