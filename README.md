@@ -122,7 +122,10 @@ Tarefa pop() {
 ### Fila
 
 O projeto foi baseado no código do dia 12/05 sobre fila, ele foi a base para realizarmos o gerenciador de tarefas. Portanto, talvez haja uma similaridade com o código feito no replit.
+
 A diferença é a adaptação do valor inteiro para string
+
+
 
 ```c
 void inserirTarefa(int id, char descricao[], int prioridade) {
