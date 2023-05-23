@@ -21,7 +21,8 @@ Período: Noturno <br>
 ## Explicação do código realizando em c++
 
 ### Bibliotecas e typedef struct
-```
+
+```javascript
 `#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
