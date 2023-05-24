@@ -160,6 +160,47 @@ void retirarTarefa() {
 <br>
 <br>
 
+### Listar e pesquisar Tarefas
+
+Para listar, utilizamos uma estrutura de repetição para ordenar do último ao primeiro de acordo com o decremento da variável ```i```.
+
+A pesquisa binária começa calculando o índice médio da lista, faz a soma do inicio, fim e divide pela quantidade de variáveis(2).
+O código entra em looping, realizando essa mesma verificação até que encontre o ID pesquisado.
+
+```c
+void listarTarefas() {
+  int i;
+  printf("Lista de Tarefas:\n");
+  for (i = total - 1; i >= 0; i--) {
+    printf("%d - %s (Prioridade: %d)\n", tarefas[i].id, tarefas[i].descricao, tarefas[i].prioridade);
+  }
+}
+
+int pesquisaBinaria(int id) {
+  int inicio = 0;
+  int fim = total - 1;
+
+  while (inicio <= fim) {
+    int meio = (inicio + fim) / 2;
+
+    if (tarefas[meio].id == id) {
+      return meio;
+    } else if (tarefas[meio].id < id) {
+      inicio = meio + 1;
+    } else {
+      fim = meio - 1;
+    }
+  }
+
+  return -1;
+}
+```
+
+
+<hr>
+<br>
+<br>
+
 ### Ordenação - Método bolha
 
 A ordenação foi baseada no código do dia 14/04, o método bolha percorre repetidamente a lista até que encontre um valor menor. Após encontrar um valor menor, ele realiza a troca de posição no índice.
@@ -184,5 +225,90 @@ void bubbleSort() {
   }
 
   printf("Tarefas ordenadas com sucesso.\n");
+}
+```
+
+
+
+<hr>
+<br>
+<br>
+
+### Função principal - Menu e switch case
+
+Nesse bloco final nós temos 2 funções, todas as funções secundáris se encontram aqui.
+
+Primeira função: Menu;
+Segunda função: Main.
+
+A primeira função é repetida toda vez que a variável opção é chamada, até que escolha a opção de sair.
+
+```c
+int menu() {
+  int opcao;
+  printf("\n-------------\n");
+  printf("\nGerenciador de Tarefas");
+  printf("\n1 - Inserir Tarefa");
+  printf("\n2 - Retirar Tarefa");
+  printf("\n3 - Listar Tarefas");
+  printf("\n4 - Pesquisar Tarefa");
+  printf("\n5 - Ordenar Tarefas (Bubble Sort)");
+  printf("\n0 - Sair");
+  printf("\n\nEscolha uma opção: ");
+  scanf("%d", &opcao);
+
+  return opcao;
+}
+
+int main(void) {
+  int opcao;
+
+  do {
+    opcao = menu();
+    switch (opcao) {
+      case 1:
+        {
+          int id, prioridade;
+          char descricao[100];
+          printf("Digite o ID da tarefa: ");
+          scanf("%d", &id);
+          printf("Digite a descrição da tarefa: ");
+          scanf(" %[^\n]", descricao);
+          printf("Digite a prioridade da tarefa: ");
+          scanf("%d", &prioridade);
+          inserirTarefa(id, descricao, prioridade);
+          break;
+        }
+      case 2:
+        retirarTarefa();
+        break;
+      case 3:
+        listarTarefas();
+        break;
+      case 4:
+        {
+          int id;
+          printf("Digite o ID da tarefa a pesquisar: ");
+          scanf("%d", &id);
+          int posicao = pesquisaBinaria(id);
+          if (posicao != -1) {
+            printf("Tarefa encontrada: %d - %s (Prioridade: %d)\n", tarefas[posicao].id, tarefas[posicao].descricao, tarefas[posicao].prioridade);
+          } else {
+            printf("Tarefa não encontrada.\n");
+          }
+          break;
+        }
+      case 5:
+        bubbleSort();
+        break;
+      case 0:
+        printf("Saindo...\n");
+        break;
+      default:
+        printf("Opção inválida\n");
+    }
+  } while (opcao != 0);
+  
+  return 0;
 }
 ```
