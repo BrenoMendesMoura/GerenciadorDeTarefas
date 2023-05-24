@@ -155,3 +155,34 @@ void retirarTarefa() {
   }
 }
 ```
+
+<hr>
+<br>
+<br>
+
+### Ordenação - Método bolha
+
+A ordenação foi baseada no código do dia 14/04, o método bolha percorre repetidamente a lista até que encontre um valor menor. Após encontrar um valor menor, ele realiza a troca de posição no índice.
+
+
+```c
+void trocarTarefas(Tarefa *t1, Tarefa *t2) {
+  Tarefa temp = *t1;
+  *t1 = *t2;
+  *t2 = temp;
+}
+
+void bubbleSort() {
+  int i, j;
+
+  for (i = 0; i < total - 1; i++) {
+    for (j = 0; j < total - i - 1; j++) {
+      if (tarefas[j].id > tarefas[j + 1].id) {
+        trocarTarefas(&tarefas[j], &tarefas[j + 1]);
+      }
+    }
+  }
+
+  printf("Tarefas ordenadas com sucesso.\n");
+}
+```
