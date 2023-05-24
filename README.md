@@ -236,7 +236,7 @@ void bubbleSort() {
 
 ### Função principal - Menu e switch case
 
-Nesse bloco final nós temos 2 funções, todas as funções secundáris se encontram aqui.
+Nesse bloco final nós temos 2 funções, todas as funções secundárias se encontram aqui.
 
 Primeira função: Menu;
 Segunda função: Main.
