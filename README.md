@@ -238,9 +238,9 @@ void bubbleSort() {
 
 Nesse bloco final nós temos 2 funções, todas as funções secundárias se encontram aqui.
 
-Primeira função: Menu;
+- Primeira função: Menu;
 
-Segunda função: Main.
+- Segunda função: Main.
 
 A primeira função é repetida toda vez que a variável opção é chamada, até que escolha a opção de sair.
 
